@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navigation item style -->
+    <style name="NavItemStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Center button style -->
+    <style name="CenterButtonStyle">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_marginTop">-32dp</item>
+        <item name="android:background">@drawable/center_button_bg</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">Add new habit</item>
+        <item name="android:elevation">12dp</item>
+        <item name="android:translationZ">12dp</item>
+    </style>
+
+    <!-- Floating FAB style -->
+    <style name="FloatingFabStyle">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">100dp</item>
+        <item name="android:background">@drawable/floating_fab_background</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:contentDescription">Add new habit</item>
+        <item name="android:elevation">16dp</item>
+        <item name="android:translationZ">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.MoodFlow.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

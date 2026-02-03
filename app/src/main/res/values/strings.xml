@@ -1,0 +1,103 @@
+<resources>
+    <!-- App Basic Info -->
+    <string name="app_name">MoodFlow</string>
+    
+    <!-- Navigation Labels -->
+    <string name="habits">Habits</string>
+    <string name="mood">Mood</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+    <string name="log_water">Log Water</string>
+    
+    <!-- Habit Related -->
+    <string name="add_habit">Add habit</string>
+    <string name="create_new_habit">✨ Create New Habit ✨</string>
+    <string name="habit">Habit</string>
+    <string name="today">Today</string>
+    <string name="already_marked_today">Already marked today</string>
+    <string name="habit_added_successfully">Habit added successfully</string>
+    <string name="please_enter_habit_name">Please enter a habit name</string>
+    <string name="please_enter_valid_number">Please enter a valid number greater than 0</string>
+    <string name="delete_habit">Delete Habit</string>
+    <string name="delete_habit_confirmation">Are you sure you want to delete \'%1$s\'?</string>
+    <string name="congratulations">🎉 Congratulations!</string>
+    <string name="habit_options">Options</string>
+    
+    <!-- Mood Related -->
+    <string name="how_are_you_feeling">How are you feeling?</string>
+    <string name="log_mood">Log mood</string>
+    <string name="weekly_mood">Weekly Mood</string>
+    <string name="please_select_mood_first">Please select a mood first!</string>
+    <string name="mood_saved_successfully">Mood saved successfully!</string>
+    <string name="mood_deleted_successfully">Mood deleted successfully!</string>
+    
+    <!-- Water Intake Related -->
+    <string name="daily_goal_ml">Daily goal (ml)</string>
+    <string name="set_daily_goal_reminders">Set daily goal &amp; reminders</string>
+    <string name="every_1_minute">Every 1 minute</string>
+    <string name="every_30_min">Every 30 min</string>
+    <string name="every_1_hour">Every 1 hour</string>
+    <string name="every_2_hours">Every 2 hours</string>
+    <string name="add_water_intake">Add water intake</string>
+    <string name="amount_ml">Amount (ml)</string>
+    
+    <!-- Settings Related -->
+    <string name="language">Language</string>
+    <string name="notifications">Notifications</string>
+    <string name="select_language">Select language</string>
+    <string name="profile_updated">Profile updated</string>
+    
+    <!-- Common Actions -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    
+    <!-- Days of Week -->
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    
+    <!-- Mood Names -->
+    <string name="mood_happy_joyful">Happy / Joyful</string>
+    <string name="mood_calm_relaxed">Calm / Relaxed</string>
+    <string name="mood_excited_energetic">Excited / Energetic</string>
+    <string name="mood_focused_productive">Focused / Productive</string>
+    <string name="mood_motivated_confident">Motivated / Confident</string>
+    <string name="mood_neutral_okay">Neutral / Okay</string>
+    <string name="mood_tired_low_energy">Tired / Low Energy</string>
+    <string name="mood_stressed_anxious">Stressed / Anxious</string>
+    <string name="mood_sad_down">Sad / Down</string>
+    <string name="mood_angry_irritated">Angry / Irritated</string>
+    <string name="mood_lonely_empty">Lonely / Empty</string>
+    <string name="mood_overwhelmed_burnt_out">Overwhelmed / Burnt out</string>
+    <string name="mood_grateful_content">Grateful / Content</string>
+    <string name="mood_hopeful_positive_outlook">Hopeful / Positive Outlook</string>
+    <string name="mood_sick_unwell">Sick / Unwell</string>
+    <string name="mood_confused_uncertain">Confused / Uncertain</string>
+    
+    <!-- Mood Tags -->
+    <string name="tag_work">Work</string>
+    <string name="tag_friends">Friends</string>
+    <string name="tag_health">Health</string>
+    <string name="tag_study">Study</string>
+    <string name="tag_family">Family</string>
+    <string name="tag_exercise">Exercise</string>
+    <string name="tag_sleep">Sleep</string>
+    <string name="tag_food">Food</string>
+    
+    <!-- Habit Units -->
+    <string-array name="habit_units">
+        <item>day</item>
+        <item>month</item>
+        <item>year</item>
+    </string-array>
+</resources>
+
+
+
+

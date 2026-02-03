@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnnew"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/day_button_unselected"
+    android:clickable="true"
+    android:focusable="true"
+    android:text="newButton"
+    android:textColor="@color/day_button_text_color"
+    android:textSize="12sp"
+    android:textStyle="bold" />
+

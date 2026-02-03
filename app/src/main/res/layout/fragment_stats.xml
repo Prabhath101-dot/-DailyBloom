@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/habit_dark_background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <!-- Date - centered -->
+            <TextView
+                android:id="@+id/textCurrentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="@color/habit_text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Monday, 4th Dec" />
+
+            <!-- Progress circle and quantity - perfectly aligned -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp">
+
+                <!-- Progress circle -->
+                <com.example.moodflow.ui.WaveProgressView
+                    android:id="@+id/waveProgress"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp" />
+
+                <!-- Intake numbers - directly below bubble -->
+                <TextView
+                    android:id="@+id/textIntake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/habit_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="500/1790 ml" />
+
+            </LinearLayout>
+
+            <!-- Edit goal section - centered -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="48dp">
+
+                <TextView
+                    android:id="@+id/textDailyGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set daily goal &amp; reminders"
+                    android:textColor="@color/habit_text_secondary"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/btnEditGoal"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_edit"
+                    android:tint="@color/habit_text_secondary" />
+            </LinearLayout>
+
+            <!-- Today's records section - left aligned -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Today's records"
+                        android:textColor="@color/habit_text_primary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textCupsSummary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/habit_text_secondary"
+                        android:textSize="14sp"
+                        tools:text="6 cups" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_water_record" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Floating Add Button -->
+    <ImageView
+        android:id="@+id/floatingAddButton"
+        style="@style/FloatingFabStyle"
+        android:src="@drawable/ic_plus" />
+
+    <!-- Bottom Navigation Bar -->
+    <include
+        android:id="@+id/bottomNavBar"
+        layout="@layout/bottom_nav_bar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
