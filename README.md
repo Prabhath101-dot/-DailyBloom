@@ -1,7 +1,7 @@
-# MoodFlow - Mobile Application Development Lab Exam Project
+# DailyBloom – Personal Wellness Tracker
 
 ## Project Overview
-MoodFlow is a comprehensive mood and habit tracking Android application built with Kotlin. The app helps users track their daily moods, manage habits, monitor water intake, and maintain overall well-being through data visualization and reminder systems.
+DailyBloom is a comprehensive mood and habit tracking Android application built with Kotlin. The app helps users track their daily moods, manage habits, monitor water intake, and maintain overall well-being through data visualization and reminder systems.
 
 ## Features
 
@@ -60,69 +60,3 @@ The application extensively uses SharedPreferences for data persistence:
 - Custom adapters for RecyclerView components
 - Material Design card layouts and animations
 
-## Project Structure
-
-```
-app/src/main/java/com/example/moodflow/
-├── MainActivity.kt                 # Main activity with fragment management
-├── MoodData.kt                     # Data classes and predefined mood data
-├── HabitsFragment.kt               # Habit tracking functionality
-├── ModernMoodFragment.kt           # Mood logging with advanced features
-├── StatsFragment.kt                 # Water intake tracking and statistics
-├── SettingsFragment.kt              # App settings and preferences
-├── AddHabitActivity.kt              # Habit creation and editing
-├── EditProfileFragment.kt           # Profile management
-├── water/
-│   └── WaterReminderReceiver.kt    # Notification broadcast receiver
-└── ui/
-    ├── LiquidProgressView.kt       # Custom progress animation
-    └── WaveProgressView.kt          # Custom wave animation
-```
-
-## Lab Exam Requirements Compliance
-
-### 1. Functionality (3 marks) ✅
-- **Core Features**: Comprehensive mood tracking, habit management, water intake monitoring
-- **Bonus Features**: Notifications, profile management, theme switching, multi-language support
-
-### 2. Creativity & User Interface Design (2 marks) ✅
-- Modern Material Design implementation
-- Custom animations and progress indicators
-- Intuitive navigation with bottom navigation bar
-- Responsive layouts with proper spacing and colors
-
-### 3. Code Quality & Organization (2 marks) ✅
-- Well-documented code with comprehensive comments
-- Proper separation of concerns
-- Clean architecture with reusable components
-- Error handling and validation
-
-### 4. Advanced Features & Data Persistence (3 marks) ✅
-- **SharedPreferences Usage**: Extensive use across multiple features
-- **Advanced Features**: AlarmManager, file operations, JSON serialization
-- **Data Persistence**: Complex data structures stored and retrieved efficiently
-
-## Installation & Setup
-
-1. Clone the repository
-2. Open in Android Studio
-3. Sync Gradle files
-4. Build and run on Android device or emulator
-
-## Dependencies
-
-- AndroidX Core KTX
-- Material Design Components
-- Gson for JSON serialization
-- MPAndroidChart for statistics
-- FlexboxLayout for tag management
-
-## Author
-MoodFlow Development Team - SLIIT Mobile Application Development Course
-
-## Version
-1.0 - Lab Exam Submission
-
----
-
-**Note**: This project demonstrates comprehensive Android development skills including data persistence, notification systems, custom UI components, and modern Android development practices.
